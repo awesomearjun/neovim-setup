@@ -27,12 +27,12 @@ require('mason-lspconfig').setup({
 	ensure_installed = {'ts_ls', 'rust_analyzer', "clangd"},
 	handlers = {
 		function(server_name)
-			require('lspconfig')[server_name].setup({
+			require('lspconfig.' .. server_name).setup({
 				capabilities = lsp_capabilities,
 			})
 		end,
 		lua_ls = function()
-			require('lspconfig').lua_ls.setup({
+			require('lspconfig.lua_ls').setup({
 				capabilities = lsp_capabilities,
 				settings = {
 					Lua = {
