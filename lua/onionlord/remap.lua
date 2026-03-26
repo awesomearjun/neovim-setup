@@ -27,5 +27,6 @@ vim.keymap.set("i", "<C-j>", 'copilot#Accept("\\<CR>")', {
   replace_keycodes = false
 })
 
-vim.keymap.set("n", "<C-[>", vim.cmd.bprevious)
-vim.keymap.set("n", "<C-]>", vim.cmd.bnext)
+vim.keymap.set("n", "<C-S-[>", vim.cmd.bprevious)
+vim.keymap.set("n", "<C-S-]>", vim.cmd.bnext)
+vim.keymap.set("n", "<C-S-x>", vim.cmd.bdelete)
