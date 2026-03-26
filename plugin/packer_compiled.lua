@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/onionlord/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/onionlord/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/onionlord/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
