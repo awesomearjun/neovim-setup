@@ -1,0 +1,7 @@
+-- plugin specific file (telescope aka fuzzy finder)
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<C-f>', builtin.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>gf', builtin.git_files, { desc = 'Telescope find git files' })
+vim.keymap.set('n', '<C-s>', function()
+	builtin.grep_string({ string = vim.fn.input("Grep string: ") })
+end)

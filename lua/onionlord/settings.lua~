@@ -1,0 +1,15 @@
+-- Default vim options
+
+vim.cmd("set shiftwidth=4")
+vim.opt.expandtab = false
+vim.opt.tabstop = 4
+vim.g.netrw_liststyle = 3
+vim.opt.relativenumber = true
+
+-- gutter colors
+vim.api.nvim_set_hl(0, "LineNr", {fg = "#cccccc"}) -- line number of current line
+vim.api.nvim_set_hl(0, "CursorLineNr", {fg = "#cccccc"}) -- line number of current line when cursor is on it
+vim.api.nvim_set_hl(0, "SignColumn", {bg = "#1a1d23"}) -- background of sign column
+vim.api.nvim_set_hl(0, "GitSignsAdd", {fg = "#00ff00", bg = "#1a1d23"}) -- added lines
+vim.api.nvim_set_hl(0, "GitSignsChange", {fg = "#ffff00", bg = "#1a1d23"}) -- changed lines
+vim.api.nvim_set_hl(0, "GitSignsDelete", {fg = "#ff0000", bg = "#1a1d23"}) -- deleted lines
